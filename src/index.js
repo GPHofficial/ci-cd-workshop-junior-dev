@@ -4,8 +4,10 @@ const feature1 = require('./feature1');
 
 const app = express();
 
-const server = app.listen(3000, () =>
-    console.log('Example app listening on port 3000!')
+const port = process.env.PORT || 5000;
+
+const server = app.listen(port, () =>
+    console.log('Example app listening on port ' + port)
 );
 
 app.get('/', (req, res) => {
