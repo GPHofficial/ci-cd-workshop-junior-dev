@@ -9,8 +9,9 @@ jobs:
 
 workflows:
   version: 2
-  workflow1:
+  build_and_test:
     jobs:
       - lint
       - test:
-        requires: -lint
+        requires: 
+          -lint

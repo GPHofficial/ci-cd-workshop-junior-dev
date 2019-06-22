@@ -17,5 +17,5 @@ describe('GET root path', () => {
 
   afterAll(() => {
     server.stop();
-  })
+  });
 });

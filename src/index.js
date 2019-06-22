@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 const stop = () => {
   server.close();
-}
+};
 
 module.exports = server;
 module.exports.stop = stop;
