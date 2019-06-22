@@ -5,5 +5,5 @@ module.exports = {
 }
 
 const getNameFromParam = (req) => {
-  return "Tom Riddle"
+  return "Voldemort"
 }
