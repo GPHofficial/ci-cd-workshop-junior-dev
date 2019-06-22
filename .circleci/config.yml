@@ -5,13 +5,10 @@ jobs:
       - image: circleci/node:10.15.3 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: npm install && npm test # run the `echo` command
-
+      - run: npx eslint src/feature1.js # run the `echo` command
+      
 workflows:
   version: 2
   build_and_test:
     jobs:
       - lint
-      - test:
-        requires: 
-          -lint
