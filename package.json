@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "test": "jest .",
     "integration-test": "jest integration",
     "lint": "npx eslint src/feature1.js"
