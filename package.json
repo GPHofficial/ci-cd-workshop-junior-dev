@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon src/index.js",
     "test": "jest .",
-    "integration-test": "jest integration"
+    "integration-test": "jest integration",
+    "lint": "npx eslint src/feature1.js"
   },
   "author": "",
   "license": "ISC",
